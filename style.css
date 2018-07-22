@@ -69,6 +69,7 @@ header {
   font-weight: bold;
   margin: 0;
   text-align: right;
+  vertical-align: bottom;
 }
 header nav {
   width: 100%;
