@@ -1,0 +1,150 @@
+body {
+  text-align: center;
+}
+
+#debug {
+  display: block;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 5px;
+}
+
+#container {
+  position: relative;
+  top: 50px;
+  display: inline-flex;
+  margin: auto;
+}
+
+#map {
+  display: inline-block;
+  border: 1px solid black;
+  background: url("map.png");
+  width: 816px;
+  height: 816px;
+}
+
+.location {
+  position: absolute;
+  width: 54px;
+  height: auto;
+  margin-top: -9px;
+  margin-left: -26px;
+  padding: 8px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-size: 0;
+  /* color: transparent; */
+}
+
+.location:before {
+  display: block;
+  float: left;
+  width: 8px;
+  height: 8px;
+  content: "";
+  margin: 0px 23px;
+  background: url(nodes.png) 8px 0px;
+}
+
+.character {
+  width: 16px;
+  height: 16px;
+  margin: 1px;
+}
+
+#info {
+  display: none;
+  display: inline-block;
+  border: 1px solid black;
+  width: 322px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+#info p {
+  margin-left: 32px;
+}
+
+#info ul {
+  list-style: none;
+}
+
+#info li {
+  margin-left: -32px;
+  padding-left: 24px;
+  padding-bottom: 2px;
+  background-position-y: 1px !important;
+  background-repeat: no-repeat !important;
+}
+
+/* .node {
+  position: absolute;
+  color: transparent;
+  height: 16px;
+  width: 16px;
+  border: 1px solid transparent;
+  font-size: 0;
+  white-space: nowrap;
+}
+
+.node:hover {
+  border-radius: 10px;
+  font-size: 13px;
+  height: 16px;
+  padding-right: 22px;
+  width: auto;
+  color: black;
+  font-family: georgia;
+  margin-top: 0;
+  margin-left: 0;
+  z-index: 1;
+}
+
+.node:hover:before {
+  margin: 4px;
+} */
+
+/* --------------------- COLORS --------------------- */
+
+/* .node.red:hover {
+  background: #f77;
+  border: 2px solid #700;
+}
+
+.node.red:before {
+  background: url(nodes.png) 0px 0px;
+}
+
+
+.node.yellow:hover {
+  background: #fe7;
+  border: 2px solid #870;
+}
+
+.node.yellow:before {
+  background: url(nodes.png) 8px 0px;
+}
+
+
+.node.blue:hover {
+  background: #77f;
+  border: 2px solid #007;
+}
+
+.node.blue:before {
+  background: url(nodes.png) 0px 8px;
+}
+
+
+.node.purple:hover {
+  background: #b7e;
+  border: 2px solid #407;
+}
+
+.node.purple:before {
+  background: url(nodes.png) 8px 8px;
+} */
