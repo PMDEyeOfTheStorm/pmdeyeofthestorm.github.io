@@ -18,12 +18,26 @@ body {
   margin: auto;
 }
 
-#map {
+.maplayer {
   display: inline-block;
-  border: 1px solid black;
-  background: url("map.png");
   width: 816px;
   height: 816px;
+  background-size: 100% !important;
+  image-rendering: pixelated;
+  position: absolute;
+  left: 0;
+}
+
+.maplayer.l1 {
+  border: 1px solid black;
+  background: url("Map4-17_Background.png");
+  position: relative;
+}
+.maplayer.l2 {
+  background: url("Map4-17_Foreground.png");
+}
+.maplayer.clouds {
+  background: url("Map_Fog_of_War11-1-19.png");
 }
 
 .location {
@@ -47,7 +61,10 @@ body {
   height: 8px;
   content: "";
   margin: 0px 23px;
-  background: url(nodes.png) 8px 0px;
+  background: url(nodes.png) 0px 0px;
+}
+.location.active:before {
+  background: url(nodes.png) -8px 0px;
 }
 
 .character {
@@ -79,6 +96,17 @@ body {
   padding-bottom: 2px;
   background-position-y: 1px !important;
   background-repeat: no-repeat !important;
+}
+
+.shadowborder {
+  filter:
+    drop-shadow(var(--border-width-2) 0 var(--border-color))
+    drop-shadow(var(--border-width) 0 var(--border-color))
+    drop-shadow(0 var(--border-width-2) var(--border-color))
+    drop-shadow(0 var(--border-width) var(--border-color));
+  --border-width: 2px;
+  --border-width-2: calc(-1 * var(--border-width));
+  --border-color: black;
 }
 
 /* .node {
